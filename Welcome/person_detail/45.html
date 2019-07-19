@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+    <title>detail </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .parallax {
+  /* The image used */
+  background-image: url("m2.png");
+
+  /* Set a specific height */
+  min-height: 650px; 
+  min-width: auto ;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    </style>
+    <body>
+        <div class="parallax">
+        <div class="container-fluid">
+
+
+		<!-- HEADER -->
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div id="logo">
+                       <h1><strong>Rajiv Yadav's <span>Family Tree</span></strong></h1>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row txtright">
+<!--
+                    <img alt="logo" src="header_logo.png">
+                                    </div>
+-->
+            </div>
+        </div>
+    </div>
+    <br><br>
+<!--</div>-->
+			<div class="row">
+                <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3 col-lg-8">
+                                    <div class="form-group">
+                                        <label class="control-label">Gender: </label>   &nbsp; &nbsp; &nbsp;                 
+                                        Male                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1 col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label">First Name</label>
+                                            <br>                Pratap                  </div>
+                                </div>
+
+                                <div class="col-md-1 col-lg-4 non_female_fields" >
+                                    <div class="form-group">
+                                        <label class="control-label">Last Name</label>
+                                                                            </div>
+                                </div>
+
+                                
+                                <div class="col-md-1 col-lg-4 female_fields"  style="display:none;" >
+                                    <div class="form-group">
+                                        <label class="control-label">Maiden Name</label>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-lg-4 female_fields"  style="display:none;" >
+                                    <div class="form-group">
+                                        <label class="control-label">Married Name</label>
+                                                                            </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2 col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Birth Date</label>
+                                        <div class="input-group">
+                                            
+                                        0000-00-00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Birth Place</label>
+                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <div class="row">
+                                <div class="col-md-3 col-lg-8">
+                                    <div class="form-group">                 
+                                       
+                                        Deceased
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <div class="row" id="death_div"  style="display:none;" >
+                                <div class="col-md-2 col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Death date</label>
+                                        <div class="input-group">
+                                        0000-00-00
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1 col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Death Place</label>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                            <div class="col-sm-4">
+                        <a class="btn btn-info btn-lg" href="../../index.html">Cancel</a>
+                     </div>
+                        <div class="col-sm-4"></div>
+                        </div>
+
+                        </div>
+                </div>
+                                    <div class="col-sm-4"></div>
+                    </div>	
+		<!-- FOOTER -->
+<!--
+			<div id="footer">
+    <div class="copyright">
+        <div class="container">
+            <div style="text-align: center;" class="row">
+                    <span class="socico">Copyright &copy; 2019  Rajiv Yadav's Family Tree. All rights reserved. </span>
+            </div>
+        </div>
+    </div>
+</div>		
+    
+-->
+    
+    <!-- /FOOTER -->
+
+		<!-- JS -->
+
+		<script src="../../web/js/jquery-1.11.3.min.js"></script>
+		<script src="../../web/js/bootstrap.js"></script>
+		<script src="../../web/js/datepicker.js"></script>
+
+<!--		 /JS -->
+
+<!--
+		<script>
+			 $(function () {
+					$(".date").datepicker({
+						autoclose: true,
+						todayHighlight: true
+					});
+				});
+
+				function living_status()
+				{
+					if($('input[name="living_status"]:checked').val()=='Deceased')
+					{
+						$('#death_div').show();
+					}
+					else
+					{
+						$('#death_date').val('');
+					$('#death_place').val('');
+					$('#death_div').hide();
+					}
+				}
+
+				function select_gender(data)
+				{
+					//alert('hello');
+					$('input:radio[name=gender]').filter('[value='+data+']').prop('checked', true);
+					gender();
+
+				}
+
+				function gender()
+				{
+					if($('input[name="gender"]:checked').val()=='Female')
+					{
+						$('#last_name').val('');
+						$('.non_female_fields').hide();
+						$('.female_fields').show();
+					}
+					else
+					{
+						$('#maiden_name').val('');
+						$('#married_name').val('');
+						$('.female_fields').hide();
+						$('.non_female_fields').show();
+					}
+				}
+
+				$('input[name="living_status"]').click(function(){
+					living_status();
+				});
+
+				$('input[name="gender"]').click(function(){
+					gender();
+				});
+
+				$(function () {
+					$('.tree li div a.btnadd').on('click', function(event) {
+						$(".spiderButton").attr("data-personid",$(this).data('id'));
+						event.preventDefault();
+						$('#topmenu').addClass('open');
+					});
+					$('.simplemodal-close, .spiderButton').on('click keyup', function(event) {
+						$('#topmenu').removeClass('open');
+					});
+				});
+
+				$(document).on("click", ".spiderButton", function () {
+					var person_id = $(this).data('personid');
+					var addoption = $(this).data('addoption');
+					$(".modal-body #person_id").val( person_id );
+					$(".modal-body #add_option").val( addoption );
+
+					// As pointed out in comments, 
+					// it is superfluous to have to manually call the modal.
+					// $('#addBookDialog').modal('show');
+				});
+
+				$(document).on("click", "#btnCancel", function () {
+					$("#add_person")[0].reset();
+					$('#person_id').val('');
+					$('#add_option').val('');
+				});
+
+		</script>
+-->
+            </div>
+            </div>
+    </body>
+</html>
